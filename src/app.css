@@ -1,0 +1,152 @@
+    /*RESPONSIVE STYLES*/
+   
+    @media only screen and (max-width: 600px) {
+        .itemContainer {
+            margin-right: 20px;
+        }
+        .page-header {
+            max-width: 345px;
+        }
+        .page-header .headerTitle {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        .alert {
+            top: calc( 20% - ( 50px / 2) ); 
+            right: calc( 50% - ( 280px / 2) ); 
+        }
+        
+    }    
+    @media only screen and (max-width: 420px) {
+        .navMenu > .btn-group, .itemList > .card {
+            max-width: 345px !important;
+        }
+
+        .itemList {
+            min-width: 410px !important;
+        }
+       
+    }  
+
+    @media only screen and (max-width: 360px) {
+        .page-header {
+            max-width: 302px;
+        }
+
+        .navMenu > .btn-group {
+            max-width: 302px !important;
+            min-width: 289px !important;
+        }
+        .itemList {
+            width: 332px;
+            min-width: 332px !important;
+        }
+    }  
+
+
+    /*GENERAL STYLES*/
+    body {
+        background: #7f878e;
+        color: #fff;
+        overflow-x: hidden;
+    }
+
+    input::placeholder {
+        color: #fff;
+    }
+
+    .btn-link {
+        color: #17a2b8;
+    }
+
+    .card {
+        margin-bottom: 10px;
+        background: inherit;
+    }
+     
+    .card-body {
+        height: 45vh;
+        overflow: auto;
+    }
+
+    .card-title {
+        color: #000;
+        font-size: 1rem;
+    }
+
+    .card:last-child {
+        margin-bottom: 25px;
+    }
+
+    .card-block {
+        padding: 15px;
+        cursor: pointer;
+        background: #DFE3E6;
+    }
+
+    .dropdown-menu {
+        display:block;
+        width: 99%;
+        text-align: center;
+        z-index: 2147483647;
+        position: absolute;
+    }
+
+   
+
+    /*PAGE HEADER*/
+    .page-header .headerTitle{
+        font-weight: 300;
+        margin-top: 60px;
+    }
+
+    .headerLogo {
+        width: 45px;
+        object-fit: scale-down;
+    }
+   
+    /*NAV MENU*/
+    .navMenu > .btn-group{
+        min-width: 345px;
+        padding: 0;
+        margin: 0 0 10px;
+    }
+
+    /*LISTS OF ITEMS*/
+    .itemList {
+        min-width: 315px;
+    }
+
+    /*ITEMS*/
+    .listItem {
+        background: #627180;
+    }
+
+    /*ALERTS*/
+    .alert {
+        display: block;
+        position: fixed;
+        z-index: 1031;
+        width: 280px;
+        height: 60px;
+        opacity: 0.8;
+        top: 5px;
+        left: 40px;
+        
+    }
+    
+    /*NEW ITEM FORM*/
+    .add-item input {
+        outline: none;
+        border: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        width: 100%;
+        transition: all 0.25s;
+        background: inherit;
+        color: white;
+    }
+    .add-item input:focus {
+        border-bottom-color: rgba(255, 255, 255, 1);
+    }
+
+    
